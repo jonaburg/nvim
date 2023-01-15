@@ -73,7 +73,7 @@ section.left[1] = {
       -- define color for each mode
       local mode_color = {
         n = colors.blue,        -- normal
-        i = colors.grey, -- insert
+        i = colors.light_green, -- insert
         v = colors.purple,      -- visual
         [''] = colors.purple, -- visual block
         V = colors.purple,      -- visual line
@@ -204,7 +204,7 @@ section.right[5] = {
     end,
     separator = ' ',
     separator_highlight = {'NONE', colors.bg},
-    highlight = {colors.white, colors.bg}
+    highlight = {colors.grey, colors.bg}
   }
 }
 
@@ -218,9 +218,9 @@ section.right[7] = {
       return true
     end,
     separator = ' ',
-    separator_highlight = {colors.grey, colors.white},
+    separator_highlight = {colors.grey, colors.grey},
     icon = ' ',
-    highlight = {colors.grey, colors.white}
+    highlight = {colors.yellow, colors.grey}
   }
 }
 
@@ -229,7 +229,7 @@ section.right[8] = {
   BufferType = {
     provider = 'FileTypeName',
     separator = li.b..li.tl..' ',
-    separator_highlight = {colors.white, colors.bg},
+    separator_highlight = {colors.grey, colors.bg},
     highlight = {colors.grey, colors.bg}
   }
 }

@@ -21,6 +21,9 @@ local packer = require('packer').startup(function(use)
     }
   }
 
+  -- colorscheme
+  use 'sainnhe/everforest'
+
   -- goyo
   use 'junegunn/goyo.vim'
 
