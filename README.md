@@ -1,7 +1,5 @@
 # Short Intro
 
-![Screenshot](./assets/nvim-screenshot.png)
-
 This is my NeoVim config (for version 0.7.2 and greater).
 
 ## Features

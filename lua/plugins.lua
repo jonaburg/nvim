@@ -8,7 +8,7 @@ if fn.empty(fn.glob(installPath)) > 0 then
   packerBootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', installPath})
   vim.cmd [[packadd packer.nvim]]
 end
-
+--
 local packer = require('packer').startup(function(use)
   -- Packer should manage itself
   use 'wbthomason/packer.nvim'
@@ -20,6 +20,9 @@ local packer = require('packer').startup(function(use)
       'nvim-lua/plenary.nvim'
     }
   }
+
+  -- goyo
+  use 'junegunn/goyo.vim'
 
   -- surround vim
   use 'tpope/vim-surround'
@@ -96,6 +99,7 @@ local packer = require('packer').startup(function(use)
 end)
 
 -- plugin specific configs go here
+--require('plugin-config/goyo')
 require('plugin-config/nvim-cmp')
 require('plugin-config/telescope')
 require('plugin-config/nvim-tree')

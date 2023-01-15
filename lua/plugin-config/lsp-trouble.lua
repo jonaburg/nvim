@@ -10,7 +10,7 @@ require('trouble').setup{
     padding = true, -- add an extra new line on top of the list
     action_keys = { -- key mappings for actions in the trouble list
         close = "q", -- close the list
-        cancel = {"ć", "Ć"}, -- cancel the preview and get back to your last window / buffer / cursor
+        cancel = {";"}, -- cancel the preview and get back to your last window / buffer / cursor
         refresh = "r", -- manually refresh
         jump = {"<cr>", "<tab>"}, -- jump to the diagnostic or open / close folds
         toggle_mode = "m", -- toggle between "workspace" and "document" diagnostics mode
