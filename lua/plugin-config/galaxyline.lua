@@ -1,4 +1,5 @@
 local gl = require('galaxyline')
+local fileinfo = require('galaxyline.provider_fileinfo')
 local section = gl.section
 local condition = require('galaxyline.condition')
 
@@ -281,4 +282,12 @@ section.short_line_right[1] = {
       colors.bg
     }
   }
+}
+section.right[2] = {
+	LineInfo = {
+		provider = 'LineColumn',
+		separator = ' | ',
+		separator_highlight = {colors.blue,colors.bg_active},
+		highlight = {colors.blue,colors.bg_active},
+	},
 }
