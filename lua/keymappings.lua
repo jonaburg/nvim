@@ -62,6 +62,21 @@ vim.api.nvim_set_keymap('', '<C-L>', '<C-I>', opts)
 -- Goyo Focus
 vim.api.nvim_set_keymap('n', '<Leader>f', ':Goyo<CR>', opts)
 
+-- Theme Habamax
+vim.api.nvim_set_keymap('n', '<Leader>1', ':set background=light<CR> :colo Habamax<CR>', opts)
+-- Theme PaperColorSlim
+vim.api.nvim_set_keymap('n', '<Leader>2', ':set background=light<CR> :colo PaperColorSlim<CR>', opts)
+-- Theme DarkBlue
+vim.api.nvim_set_keymap('n', '<Leader>3', ':set background=light<CR> :colo darkblue<CR>', opts)
+-- Theme Everforest
+vim.api.nvim_set_keymap('n', '<Leader>4', ':set background=dark<CR> :colo everforest<CR>', opts)
+-- Theme underwater
+vim.api.nvim_set_keymap('n', '<Leader>5', ':set background=dark<CR> :colo underwater<CR>', opts)
+-- Theme muon
+vim.api.nvim_set_keymap('n', '<Leader>6', ':set background=dark<CR> :colo muon<CR>', opts)
+-- Theme nightfly
+vim.api.nvim_set_keymap('n', '<Leader>7', ':set background=dark<CR> :colo nightfly<CR>', opts)
+
 -- LSP
 vim.api.nvim_set_keymap('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opts)
 vim.api.nvim_set_keymap('n', 'gD', '<Cmd>lua vim.lsp.buf.declaration()<CR>', opts)

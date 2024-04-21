@@ -23,6 +23,12 @@ autocmd FileChangedShellPost *
   \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
 ]])
 
+--vim.cmd('autocmd BufWritePre * PrettierAsync')
+
+if vim.bo.filetype ~= '' then
+  vim.cmd('autocmd BufWritePre <buffer> PrettierAsync')
+end
+
 
 -- ================= Scrolling ================= --
 
@@ -33,8 +39,6 @@ vim.o.scrolloff = 8 -- start scrolling when 8 lines away from margins
 
 -- pay attention to 'vim.bo' (buffer local options) and 'vim.o' (global options)
 -- see :help options.txt
-
--- for some reason these values need to be set in both o and bo objects
 -- eventhough these options are supposed to be local to buffer
 vim.o.tabstop = 4					-- maximum width of tab character (measured in spaces)
 vim.bo.tabstop = 4
@@ -92,3 +96,4 @@ vim.o.hidden=true
 
 -- Copy paste between vim and everything else
 vim.o.clipboard = "unnamedplus"
+
