@@ -62,6 +62,7 @@ local lspconfig = require("lspconfig")
 lspconfig.tsserver.setup {}
 lspconfig.lua_ls.setup {}
 lspconfig.gopls.setup {}
+lspconfig.htmx.setup{}
 
   -- require("lspconfig").lua_ls.setup {}
 -- require("lspconfig").rust_analyzer.setup {}

@@ -9,7 +9,8 @@ vim.o.cursorline = true
 --vim.o.background = 'light'
 --vim.cmd('colorscheme PaperColorSlim')
 vim.o.background = 'dark'
-vim.cmd('colorscheme nightfly')
+vim.cmd('colorscheme moonfly')
+--vim.cmd('colorscheme nightfly')
 --vim.cmd('colorscheme underwater')
 --vim.cmd('colorscheme muon')
 --vim.cmd('colorscheme habamax')

@@ -63,7 +63,7 @@ vim.api.nvim_set_keymap('', '<C-L>', '<C-I>', opts)
 vim.api.nvim_set_keymap('n', '<Leader>f', ':Goyo<CR>', opts)
 
 -- Theme Habamax
-vim.api.nvim_set_keymap('n', '<Leader>1', ':set background=light<CR> :colo Habamax<CR>', opts)
+vim.api.nvim_set_keymap('n', '<Leader>1', ':set background=light<CR> :colo moonfly<CR>', opts)
 -- Theme PaperColorSlim
 vim.api.nvim_set_keymap('n', '<Leader>2', ':set background=light<CR> :colo PaperColorSlim<CR>', opts)
 -- Theme DarkBlue
